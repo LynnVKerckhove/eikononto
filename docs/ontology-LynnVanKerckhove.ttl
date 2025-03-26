@@ -3,6 +3,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 <http://example.org/eikononto> a owl:Ontology ;
     rdfs:label "EikonOnto"@en ;
@@ -13,15 +14,13 @@
 
 eikononto:Photograph a owl:Class ;
     rdfs:label "Photograph"@en ;
-    rdfs:comment "A digital or physical photograph."@en .
-
-eikononto:Subject a owl:Class ;
-    rdfs:label "Subject"@en ;
-    rdfs:comment "A thing, person, or place depicted in a photograph."@en .
+    rdfs:comment "A digital or physical photograph."@en ;
+    owl:equivalentClass foaf:Image.
 
 eikononto:Photographer a owl:Class ;
     rdfs:label "Photographer"@en ;
-    rdfs:comment "A person who captures photographs."@en .
+    rdfs:comment "A person or organisation who captures photographs or the professional website of the Photographer."@en ;
+    rdfs:subClassOf foaf:Agent .
 
 eikononto:Location a owl:Class ;
     rdfs:label "Location"@en ;
@@ -29,9 +28,9 @@ eikononto:Location a owl:Class ;
 
 eikononto:depicts a owl:ObjectProperty ;
     rdfs:domain eikononto:Photograph ;
-    rdfs:range eikononto:Subject ;
+    rdfs:range foaf:Agent ;
     rdfs:label "depicts"@en ;
-    rdfs:comment "Relates a photograph to the subject it depicts."@en .
+    rdfs:comment "Indicates the subject of the photograph, which can be a person or organization."@en .
 
 eikononto:createdBy a owl:ObjectProperty ;
     rdfs:domain eikononto:Photograph ;

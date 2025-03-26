@@ -1,3 +1,7 @@
+@prefix eikononto: <http://example.org/eikononto#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
 <https://theuntold.be/> a eikononto:Photographer ;
     rdfs:label "The Untold"@en ;
     rdfs:comment "The website of the Photographer that goes with the name The Untold."@en .
