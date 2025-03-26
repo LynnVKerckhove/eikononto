@@ -19,7 +19,7 @@
     eikononto:createdBy <https://theuntold.be/> ;
     eikononto:title "Guy and the C" ;
     eikononto:mood "Serene but positive" ;
-    eikononto:dominantColor "Teal" ;
+    eikononto:dominantColor "Dark Turquoise" ;
     eikononto:takenOn "2022-09-09"^^xsd:date .
 
 </docs/tapestry.jpg> a eikononto:Photograph ;
