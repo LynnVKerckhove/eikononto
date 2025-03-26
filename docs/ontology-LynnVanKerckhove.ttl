@@ -1,0 +1,70 @@
+@prefix eikononto: <http://example.org/eikononto#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/eikononto> a owl:Ontology ;
+    rdfs:label "EikonOnto"@en ;
+    rdfs:comment "An ontology for describing photographs and their metadata."@en ;
+    owl:versionInfo "1.0" ;
+    owl:creator "Lynn Van Kerckhove" ;
+    owl:date "2025-03-24"^^xsd:date .
+
+eikononto:Photograph a owl:Class ;
+    rdfs:label "Photograph"@en ;
+    rdfs:comment "A digital or physical photograph."@en .
+
+eikononto:Subject a owl:Class ;
+    rdfs:label "Subject"@en ;
+    rdfs:comment "A thing, person, or place depicted in a photograph."@en .
+
+eikononto:Photographer a owl:Class ;
+    rdfs:label "Photographer"@en ;
+    rdfs:comment "A person who captures photographs."@en .
+
+eikononto:Location a owl:Class ;
+    rdfs:label "Location"@en ;
+    rdfs:comment "A geographic location where a photograph was taken."@en .
+
+eikononto:depicts a owl:ObjectProperty ;
+    rdfs:domain eikononto:Photograph ;
+    rdfs:range eikononto:Subject ;
+    rdfs:label "depicts"@en ;
+    rdfs:comment "Relates a photograph to the subject it depicts."@en .
+
+eikononto:createdBy a owl:ObjectProperty ;
+    rdfs:domain eikononto:Photograph ;
+    rdfs:range eikononto:Photographer ;
+    rdfs:label "created by"@en ;
+    rdfs:comment "Indicates the photographer who took the picture."@en .
+
+eikononto:hasLocation a owl:ObjectProperty ;
+    rdfs:domain eikononto:Photograph ;
+    rdfs:range eikononto:Location ;
+    rdfs:label "has location"@en ;
+    rdfs:comment "Indicates the location where the photograph was taken."@en .
+
+eikononto:title a owl:DatatypeProperty ;
+    rdfs:domain eikononto:Photograph ;
+    rdfs:range xsd:string ;
+    rdfs:label "title"@en ;
+    rdfs:comment "The title of the photograph."@en .
+
+eikononto:mood a owl:DatatypeProperty ;
+    rdfs:domain eikononto:Photograph ;
+    rdfs:range xsd:string ;
+    rdfs:label "mood"@en ;
+    rdfs:comment "The mood or atmosphere conveyed by the photograph."@en .
+
+eikononto:takenOn a owl:DatatypeProperty ;
+    rdfs:domain eikononto:Photograph ;
+    rdfs:range xsd:date ;
+    rdfs:label "taken on"@en ;
+    rdfs:comment "The date on which the photograph was taken."@en .
+
+eikononto:dominantColor a owl:DatatypeProperty ;
+    rdfs:domain eikononto:Photograph ;
+    rdfs:range xsd:string ;
+    rdfs:label "dominant color"@en ;
+    rdfs:comment "The dominant color in the photograph, represented as a hex code or color name."@en .

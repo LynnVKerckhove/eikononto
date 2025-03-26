@@ -1,0 +1,33 @@
+<https://www.cultuurconnect.be/sites/default/files/styles/teamlid_teaser/public/2023-11/CC-portretten_%28c%29theuntold%20%28107%20van%20150%29.jpg>
+    a eikononto:Photograph ;
+    rdfs:label "Picture of Lynn Van Kerckhove"@en ;
+    eikononto:depicts <https://lynnvkerckhove.github.io/graphPub/docs/LynnVK.ttl#me> ;
+    eikononto:createdBy "The Untold" ;
+    eikononto:title "Golden Sunset over the Ocean" ;
+    eikononto:mood "Serene and nostalgic" ;
+    eikononto:takenOn "2022-09-09"^^xsd:date .
+
+<https://www.cultuurconnect.be/sites/default/files/styles/teamlid_teaser/public/2022-09/CC-portretten_%28c%29theuntold%20%2895%20van%20150%29.jpg>
+    a eikononto:Photograph ;
+    rdfs:label "Picture of Guy Cools"@en ;
+    eikononto:depicts <https://gc-cc.github.io/me.ttl#me> ;
+    eikononto:createdBy "The Untold" ;
+    eikononto:title "Golden Sunset over the Ocean" ;
+    eikononto:mood "Serene and nostalgic" ;
+    eikononto:takenOn "2022-09-09"^^xsd:date .
+
+
+
+# Instantie van een foto
+<http://example.org/photo1> 
+    rdfs:label "Sunset over the Ocean"@en ;
+    eikononto:depicts <http://example.org/subject1> ;
+    eikononto:createdBy <http://example.org/photographer1> ;
+    eikononto:takenOn "2024-03-24"^^xsd:date .
+    
+# Instantie van een subject en fotograaf
+<http://example.org/subject1> a eikononto:Subject ;
+    rdfs:label "Ocean at Sunset"@en .
+
+<http://example.org/photographer1> a eikononto:Photographer ;
+    rdfs:label "Jane Doe"@en .
