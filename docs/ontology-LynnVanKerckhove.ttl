@@ -1,11 +1,11 @@
-@prefix eikononto: <http://example.org/eikononto#> .
+@prefix eikononto: <https://lynnvkerckhove.github.io/assignment4Ontologie/docs/ontology-LynnVanKerckhove.ttl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
-<http://example.org/eikononto> a owl:Ontology ;
+<https://lynnvkerckhove.github.io/assignment4Ontologie/docs/ontology-LynnVanKerckhove.ttl> a owl:Ontology ;
     rdfs:label "EikonOnto"@en ;
     rdfs:comment "An ontology for describing photographs and their metadata."@en ;
     owl:versionInfo "1.0" ;
