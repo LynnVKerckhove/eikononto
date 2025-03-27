@@ -1,4 +1,4 @@
-@prefix eikononto: <http://example.org/eikononto#> .
+@prefix eikononto: <https://lynnvkerckhove.github.io/assignment4Ontologie/docs/ontology-LynnVanKerckhove.ttl#> .
 
 <https://theuntold.be/> a eikononto:Photographer .
 
