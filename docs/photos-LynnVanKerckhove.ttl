@@ -1,6 +1,7 @@
 @prefix eikononto: <http://example.org/eikononto#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://theuntold.be/> a eikononto:Photographer ;
     rdfs:label "The Untold"@en ;
@@ -29,7 +30,7 @@
 </docs/tapestry.jpg> a eikononto:Photograph ;
     rdfs:label "Picture of a tapestry of a crane"@en ;
     eikononto:createdBy <https://lynnvkerckhove.github.io/graphPub/docs/LynnVK.ttl#me> ;
-    eikononto:title "Tapestry with crane ;
+    eikononto:title "Tapestry with crane" ;
     eikononto:mood "Old and crafty" ;
     eikononto:dominantColor "Sandy Brown" ;
     eikononto:takenOn "2022-09-09"^^xsd:date .
