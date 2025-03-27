@@ -19,18 +19,19 @@ eikononto:Photograph a owl:Class ;
 
 eikononto:Photographer a owl:Class ;
     rdfs:label "Photographer"@en ;
-    rdfs:comment "A person or organisation who captures photographs or the professional website of the Photographer."@en ;
+    rdfs:comment "A person who or organisation/firm (or its professional website) that captures photographs."@en ;
     rdfs:subClassOf foaf:Agent .
 
 eikononto:Location a owl:Class ;
     rdfs:label "Location"@en ;
     rdfs:comment "A geographic location where a photograph was taken."@en .
 
-eikononto:depicts a owl:ObjectProperty ;
+eikononto:portraits a owl:ObjectProperty ;
     rdfs:domain eikononto:Photograph ;
-    rdfs:range foaf:Agent ;
-    rdfs:label "depicts"@en ;
-    rdfs:comment "Indicates the subject of the photograph, which can be a person or organization."@en .
+    rdfs:range foaf:Person ;
+    rdfs:label "portraits"@en ;
+    rdfs:comment "Indicates the subject of the photograph, which can be a person or organization."@en ;
+    owl:equivalentProperty foaf:depicts .
 
 eikononto:createdBy a owl:ObjectProperty ;
     rdfs:domain eikononto:Photograph ;
