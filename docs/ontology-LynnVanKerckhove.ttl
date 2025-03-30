@@ -34,7 +34,7 @@ eikononto:Location a owl:Class ;
 
 eikononto:portraits a owl:ObjectProperty ;
     rdfs:domain eikononto:Photograph ;
-    rdfs:range foaf:Person ;
+    rdfs:range eikononto:Portraitee ;
     rdfs:label "portraits"@en ;
     rdfs:comment "Indicates of whom the photo is a portrait."@en ;
     rdfs:subPropertyOf foaf:depicts .
