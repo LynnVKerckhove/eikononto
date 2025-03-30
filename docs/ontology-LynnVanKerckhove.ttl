@@ -22,6 +22,12 @@ eikononto:Photographer a owl:Class ;
     rdfs:comment "A person who or organisation/firm (or its professional website) that captures photographs."@en ;
     rdfs:subClassOf foaf:Agent .
 
+# Toegevoegd omdat anders ?name niet werkt, maar niet erg elegant, eerst alleen portraiteeName toegevoegd, maar aangezien niet range Person, werkt dit niet
+eikononto:Portraitee a owl:Class ;
+    rdfs:label "Portraitee"@en ;
+    rdfs:comment "The person whose portrait the photograph is."@en ;
+    rdfs:subClassOf foaf:Person .
+
 eikononto:Location a owl:Class ;
     rdfs:label "Location"@en ;
     rdfs:comment "A geographic location where a photograph was taken."@en .
@@ -45,8 +51,10 @@ eikononto:hasLocation a owl:ObjectProperty ;
     rdfs:label "has location"@en ;
     rdfs:comment "Indicates the location where the photograph was taken."@en .
 
+# geen aanduiding van Person dus niet genoeg
 eikononto:portraiteeName a owl:DatatypeProperty ;
-    rdfs:domain eikononto:Photograph ;
+    # rdfs:domain eikononto:Photograph ;
+    rdfs:domain eikononto:Portraitee ;
     rdfs:range xsd:string ;
     rdfs:label "portraitee name"@en ;
     rdfs:comment "The name of the person portrayed in the photograph."@en ;

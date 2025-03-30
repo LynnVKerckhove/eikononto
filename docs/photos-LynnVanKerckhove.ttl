@@ -2,10 +2,13 @@
 
 <https://theuntold.be/> a eikononto:Photographer .
 
+<https://gc-cc.github.io/me.ttl#me> a eikononto:Portraitee ;
+    eikononto:portraiteeName "Guy Cools" .
+
 <https://www.cultuurconnect.be/sites/default/files/styles/teamlid_teaser/public/2022-09/CC-portretten_%28c%29theuntold%20%2895%20van%20150%29.jpg>
     a eikononto:Photograph ;
     eikononto:portraits <https://gc-cc.github.io/me.ttl#me> ;
-    eikononto:portraiteeName "Guy Cools" ;
+    # eikononto:portraiteeName "Guy Cools" ;
     eikononto:createdBy <https://theuntold.be/> ;
     eikononto:title "Guy and the C" ;
     eikononto:dominantColor "Dark Turquoise" ;
