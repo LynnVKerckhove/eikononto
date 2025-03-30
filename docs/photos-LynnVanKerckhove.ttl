@@ -9,7 +9,8 @@
     eikononto:createdBy <https://theuntold.be/> ;
     eikononto:title "Guy and the C" ;
     eikononto:dominantColor "Dark Turquoise" ;
-    eikononto:takenOn "2022-09-09" .
+    eikononto:takenOn "2022-09-09" ;
+    eikononto:hasLocation <https://www.wikidata.org/wiki/Q12992> .
 
 <https://gc-cc.github.io/me.ttl#me> a eikononto:Portraitee ;
     eikononto:portraiteeName "Guy Cools" .
@@ -21,7 +22,8 @@
     eikononto:createdBy <https://theuntold.be/> ;
     eikononto:title "Lynn and the C" ;
     eikononto:dominantColor "Salmon Pink" ;
-    eikononto:takenOn "2022-09-09" .
+    eikononto:takenOn "2022-09-09" ;
+    eikononto:hasLocation <https://www.wikidata.org/wiki/Q12992> .
 
 <https://lynnvkerckhove.github.io/graphPub/docs/LynnVK.ttl#me> a eikononto:Portraitee ;
     eikononto:portraiteeName "Lynn Van Kerckhove" .
@@ -30,4 +32,5 @@
     eikononto:createdBy <https://lynnvkerckhove.github.io/graphPub/docs/LynnVK.ttl#me> ;
     eikononto:title "Tapestry with crane" ;
     eikononto:dominantColor "Sandy Brown" ;
-    eikononto:takenOn "2025-03-15" .
+    eikononto:takenOn "2025-03-15" ;
+    eikononto:hasLocation <https://www.wikidata.org/wiki/Q3891679> .
